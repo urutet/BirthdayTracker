@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		CFD9AEDA27D6ACF3002771CB /* BirthdaysListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD9AED927D6ACF3002771CB /* BirthdaysListViewController.swift */; };
 		CFD9AEE027D6ACF3002771CB /* BirthdayTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFD9AEDE27D6ACF3002771CB /* BirthdayTracker.xcdatamodeld */; };
 		CFD9AEE227D6ACF5002771CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD9AEE127D6ACF5002771CB /* Assets.xcassets */; };
+		CFD9AEF227D6B76C002771CB /* BirthdayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD9AEF127D6B76C002771CB /* BirthdayTableViewCell.swift */; };
 		FA97777F8763EF5C8888BEE8 /* Pods_BirthdayTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F491250F32A004BE6CBD8A12 /* Pods_BirthdayTracker.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		CFD9AEDF27D6ACF3002771CB /* BirthdayTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BirthdayTracker.xcdatamodel; sourceTree = "<group>"; };
 		CFD9AEE127D6ACF5002771CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFD9AEE627D6ACF5002771CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFD9AEF127D6B76C002771CB /* BirthdayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayTableViewCell.swift; sourceTree = "<group>"; };
 		F1B4362E4EF3BBB4731FC127 /* Pods-BirthdayTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirthdayTracker.debug.xcconfig"; path = "Target Support Files/Pods-BirthdayTracker/Pods-BirthdayTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		F491250F32A004BE6CBD8A12 /* Pods_BirthdayTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BirthdayTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,6 +71,7 @@
 		CFD9AED427D6ACF3002771CB /* BirthdayTracker */ = {
 			isa = PBXGroup;
 			children = (
+				CFD9AEF027D6B751002771CB /* CustomUIElements */,
 				CFD9AEED27D6B66B002771CB /* Model */,
 				CFD9AEEC27D6B665002771CB /* Controller */,
 				CFD9AED527D6ACF3002771CB /* AppDelegate.swift */,
@@ -93,6 +96,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CFD9AEF027D6B751002771CB /* CustomUIElements */ = {
+			isa = PBXGroup;
+			children = (
+				CFD9AEF127D6B76C002771CB /* BirthdayTableViewCell.swift */,
+			);
+			path = CustomUIElements;
 			sourceTree = "<group>";
 		};
 		D82EBF19FB35D1CD5293B495 /* Pods */ = {
@@ -141,7 +152,7 @@
 				};
 			};
 			buildConfigurationList = CFD9AECD27D6ACF3002771CB /* Build configuration list for PBXProject "BirthdayTracker" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -218,6 +229,7 @@
 			files = (
 				CFD9AEDA27D6ACF3002771CB /* BirthdaysListViewController.swift in Sources */,
 				CFD9AED627D6ACF3002771CB /* AppDelegate.swift in Sources */,
+				CFD9AEF227D6B76C002771CB /* BirthdayTableViewCell.swift in Sources */,
 				CFD9AED827D6ACF3002771CB /* SceneDelegate.swift in Sources */,
 				CFD9AEE027D6ACF3002771CB /* BirthdayTracker.xcdatamodeld in Sources */,
 			);
@@ -358,7 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Elijah.BirthdayTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -378,7 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Elijah.BirthdayTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
