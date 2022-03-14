@@ -48,6 +48,7 @@ class BirthdayTableViewCell: UITableViewCell {
         surnameLabel.text = "qwe"
         ageLabel.text = "Age - \(20)"
         birthdayLabel.text = "24.04.2001"
+        profileImageView.image = UIImage(systemName: "trash")
     }
     // MARK: - Setups
     private func setupUI() {
